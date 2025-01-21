@@ -13,6 +13,8 @@ El proyecto Millonbackend está implementado utilizando una arquitectura basada 
 2. **Aplicación**: Esta capa contiene la lógica de negocio de la aplicación. Aquí se encuentran los comandos y consultas (CQRS) que manejan las operaciones de creación, lectura, actualización y eliminación (CRUD). También se incluyen los DTOs (Data Transfer Objects) y los manejadores de comandos y consultas. Esta capa se encuentra en la carpeta `src/Application`.
 
 3. **Infraestructura**: Esta capa contiene la implementación de los repositorios y la configuración de la base de datos. Utiliza MongoDB como base de datos y se encarga de la persistencia de los datos. Los repositorios se encuentran en la carpeta `src/Infrastructure/Persistence/Repositories`.
+4. **Dominio**: Esta capa contiene las entidades y las reglas de negocio. Las entidades se encuentran en la carpeta `src/Domain/Entities`.
+
 
 ### Patrones de Diseño
 
