@@ -28,7 +28,7 @@ El proyecto Millonbackend está implementado utilizando una arquitectura basada 
 
 - **ASP.NET Core**: Framework para construir aplicaciones web y APIs.
 - **MediatR**: Librería para implementar el patrón CQRS.
-- **MongoDB**: Base de datos NoSQL utilizada para almacenar los datos. la base de datos se crea en memoria para pruebas.
+- **MongoDB**: Base de datos NoSQL utilizada para almacenar los datos. la base de datos se crea en memoria cuando ejecutas dotnet run o dotnet watch. se creo un archivo seed que creara datos para pruebas.
 - **AutoMapper**: Librería para mapear objetos entre diferentes capas de la aplicación.
 
 ### Ejemplo de Flujo de Trabajo
