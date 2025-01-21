@@ -10,6 +10,14 @@ namespace Api.Extensions;
 public static class AplicationServiceExtensions
 {
 
+    public static void ConfigureCors(this IServiceCollection services)
+    {
+        services.AddCors(options =>
+        {
+            options.AddPolicy("Origins", builder => builder.WithOrigins("http://localhost:5173").AllowAnyMethod().AllowAnyHeader());
+        });
+    }
+
     public static IServiceCollection AddAplicationServices(this IServiceCollection services)
     {
         services.AddSingleton<MongoDbContext>();

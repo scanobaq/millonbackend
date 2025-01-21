@@ -13,6 +13,7 @@ builder.Services.AddAplicationServices();
 builder.Services.AddControllers();
 builder.Services.AddHttpClient();
 builder.Services.AddAutoMapper();
+builder.Services.ConfigureCors();
 builder.Services.AddMediatR(cfg =>
 {
     cfg.RegisterServicesFromAssemblies(typeof(CreateOwnerCommand).Assembly);
@@ -30,6 +31,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseCors("Origins");
 app.UseStaticFiles();
 app.UseHttpsRedirection();
 app.UseRouting();
